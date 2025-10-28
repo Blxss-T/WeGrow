@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Poppins' ,sans-serif;
+}
+body{
+    display: flex;
+    overflow: hidden;
+    
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.brand{
+    color: Black;
+    font-size:18px;
+    font-weight: 600;
+}
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    width: 40px;
+    height: auto;
+}
+i{
+     font-size: 24px;               
+    color: green;                    /* icon color */
+    background-color: rgba(138, 247, 138, 0.37); /* light transparent green */
+    border-radius: 20px;       /* rounded corners */
+    padding: 8px;                   /* space around icon */
+    display: inline-block;
+    
+}
+.top{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    padding: auto;
+    margin: 10px; 
+    margin-bottom: 30px;
+
+}
+button{
+    border: none;
+    background: #fff;
+}
+.large{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+.small{
+    color: rgb(1, 122, 1);
+    font-size: small;
+    text-align: center;
+
+}
+.descr{
+    margin-bottom: 50px;
+}
+.newGoal{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding :10px 50px;
+    border:1px solid rgb(183, 247, 183);
+    border-radius: 10px;
+   
+    
+}
+.nextG {
+    padding: 10px;
+    width: 800px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 128, 0, 0.2); /* subtle green shadow */
+}
+::placeholder{
+    color: rgb(1, 122, 1);
+}
+.addGoal{
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    background: #30E830;
+}
+nav{
+    background-color: #8bff8b21;
+    width: 75%;
+    margin:25px auto;
+    border-radius: 18px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(198, 255, 165, 0.61);
+}
+
+li{
+   flex:1;
+   margin: 4px;
+   padding: 5px;
+   display: flex;            /* make li a flex container */
+   justify-content: center;  /* center horizontally */
+   align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+}
+label{
+    flex: 1;
+    background: #ffffff;
+    width: 80%;
+    padding: 20px;
+    margin:0 auto;
+    border:1px solid rgba(224, 247, 224, 0.705);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(238, 252, 238);
+}
+input[type="checkbox"]{
+    display: none;
+}
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;       
+  background: #fff;
+  border: 2px solid #4CAF50; 
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox-container input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  width: 6px;
+  height: 16px;
+  border: solid #4CAF50;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* @media (max-width: 768px) {
+
+  .large {
+    font-size: medium;
+  }
+
+  .small {
+    font-size: smaller;
+  }
+
+  input {
+    width: 80%;
+
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: stretch;
+    background: #f0f0f0;
+    margin: 18px ;
+    gap: 10px;
+    border-radius: 15px;
+    height:50px;
+    box-shadow: 0 0 2px rgb(198, 255, 165);
+
+  li{
+    flex: 1;
+    background:#fff;
+    text-align: center;
+    border-radius: 5px;
+}
+  ul{
+    padding: 10px;
+  }
+
+  .addGoal {
+   border-radius: 10px;
+   font-size: small;
+   font-size: smaller;
+  }
+.newGoal{
+    width: 90%;
+}
+  .logo {
+    width: 30px;
+  }
+
+  i {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newGoal {
+    flex-direction: column;
+    width: 90%;
+    padding: 8px;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  .addGoal {
+    width: 100%;
+  }
+
+  .large {
+    font-size: 1rem;
+  }
+
+  .small {
+    font-size: 0.8rem;
+  }
+} */
