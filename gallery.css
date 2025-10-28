@@ -8,12 +8,13 @@ body{
     display: flex;
     overflow: hidden;
     overflow-y: auto;
+    background: #000000;
+    padding: 1px;
     
 }
 
 section{
     width: 100%;
-    height: 100vh;
     background: #fff;
    
 }
@@ -158,12 +159,12 @@ input[type="checkbox"]{
 .checkbox-container input:checked + .checkmark::after {
   content: "";
   position: absolute;
-  left: 5px;
-  bottom: 2px;
+  left: 8px;
+  bottom: 3px;
   width: 6px;
-  height: 16px;
+  height: 20px;
   border: solid #4CAF50;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
 .active{
@@ -178,23 +179,23 @@ input[type="checkbox"]{
   margin: 20px auto;
   padding: 2px;
   gap: 20px;
-  width:75%;
-  height: 30%;
+  width: 75%;
+  /* remove height or use min-height */
+  min-height: 300px; /* ensures enough space for content */
 }
-.b-verse{
-    flex: 2;
-    border: 0.5px solid rgba(225, 255, 207, 0.185);
-    box-shadow: 0 0 2px rgba(192, 255, 192, 0.801);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 50px;
-    padding: 20px 40px;
+
+.b-verse, .progress {
+  flex: 1 1 auto; /* grow based on content */
+  box-shadow: 0 0 2px rgba(192, 255, 192, 0.801);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px 40px;
 }
 .progress{
     flex: 2;
-    border: 0.5px solid rgba(225, 255, 207, 0.185);
     box-shadow: 0 0 2px rgba(192, 255, 192, 0.801);
     border-radius: 20px;
     display: flex;
