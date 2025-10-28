@@ -140,7 +140,7 @@ label{
     margin:0 auto;
     border:1px solid rgba(224, 247, 224, 0.705);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(238, 252, 238);
+    box-shadow: 0 0 2px rgb(216, 250, 216);
 }
 input[type="checkbox"]{
     display: none;
