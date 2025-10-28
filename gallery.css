@@ -165,8 +165,14 @@ input[type="checkbox"]{
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+.active{
+    background:#fff;
+    color: #000000;
+   border-bottom-style: solid;
+   border-radius: 5px;
+}
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .large {
     font-size: medium;
@@ -242,4 +248,5 @@ input[type="checkbox"]{
   .small {
     font-size: 0.8rem;
   }
-} */
+}
+}
