@@ -18,4 +18,9 @@ addBtn.addEventListener(onclick,()=>{
 })
 function renderGoals(){
     goalList.innerHTML='';
+    goals.forEach(g=>{
+        const label= document.createElement('label');
+        label.className='checkbox-container';
+        label.innerHTML=`<imput type="checkbox" data-id=${g.id}><span class="checkmark"></span>${g.title}`;
+    })
 }
