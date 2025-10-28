@@ -22,5 +22,6 @@ function renderGoals(){
         const label= document.createElement('label');
         label.className='checkbox-container';
         label.innerHTML=`<imput type="checkbox" data-id=${g.id}><span class="checkmark"></span>${g.title}`;
+        goalList.appendChild(label);
     })
 }
