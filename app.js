@@ -1,2 +1,2 @@
-let goal=document.getElementById('goalsInput');
-let goals[];
+let goal=document.getElementById('#goalsInput');
+const addBtn= document.getElementById('#addBtn')
