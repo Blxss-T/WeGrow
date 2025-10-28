@@ -184,6 +184,7 @@ input[type="checkbox"]{
    border-bottom-style: solid;
    border-radius: 10px;
 }
+
 .last {
   display: flex;
   border: none;
